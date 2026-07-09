@@ -31,12 +31,23 @@ int max(struct Node *p)
     }
     return max;
 }
-
+int min(struct Node *p)
+{
+    int min=0;
+    while(p)
+    {
+        if(p->data<min)
+            min=p->data;
+        p=p->next;
+    }
+    return min;
+}
 
 int main()
 {   int a[]={1,2,32,4,5};
     create(a,5);
     printf("max of all ele is %d\n",max(first));
+    printf("min of all ele is %d\n",min(first)); 
 
     return 0;
 }
