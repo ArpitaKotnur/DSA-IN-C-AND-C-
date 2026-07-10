@@ -21,7 +21,7 @@ void create(int a[],int n)
     
 }
 struct Node * Lsearch(struct Node *p, int key)
-{   struct Node *q;
+{   struct Node *q=NULL;
     while(p!=NULL)
     {
         if(p->data==key)
